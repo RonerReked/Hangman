@@ -24,11 +24,10 @@ public class HangMan {
         out.println("You have " + MAX_TRIES + " tries, goodluck.\n");
         if (guessedSecretWord()) {
             out.println("You won!\n");
-            out.println("The word was: " + secretWord);
         } else {
             out.println("You lost!\n");
-            out.println("The word was: " + secretWord);
         }
+            out.println("The word was: " + secretWord);
     }
  
     /**
@@ -47,8 +46,7 @@ public class HangMan {
             String guessWord = input.nextLine().toUpperCase();
             try {
                 guessedLetter = guessWord.charAt(0);
-            } catch (StringIndexOutOfBoundsException e) {
-            }
+            } catch (StringIndexOutOfBoundsException e) {}
             if (secretWord.indexOf(guessedLetter) != -1) {
                 for (int charPos = 0; charPos < hiddenWord.length; charPos++) {
                     if (hiddenWord[charPos] == guessedLetter) {

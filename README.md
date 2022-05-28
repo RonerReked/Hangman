@@ -1,2 +1,4 @@
 # Hangman
-Written in java back in 2016
+Written in java many years ago.
+
+No visuals, this runs strictly in terminal with logs.

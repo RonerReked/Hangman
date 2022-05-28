@@ -9,6 +9,8 @@ import java.util.*;
  */
 public class SecretGameWords {
  
+    private static int nextWord = 0;
+ 
     private SecretGameWords() {
     }
  
@@ -32,6 +34,4 @@ public class SecretGameWords {
     public static String getSecretWord() {
         return secretWords.get(nextWord++);
     }
- 
-    private static int nextWord = 0;
 }
